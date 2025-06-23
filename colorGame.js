@@ -1,3 +1,12 @@
+let roundCount = 0;
+const counterElem = document.querySelector('#round-counter strong');
+const resetBtn = document.getElementById('reset-counter');
+
+resetBtn.addEventListener('click', () => {
+  roundCount = 0;
+  counterElem.textContent = roundCount;
+});
+
 var numofSquares =6;
 var color = generateRandomColors(numofSquares);
 
