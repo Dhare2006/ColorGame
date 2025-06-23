@@ -54,6 +54,9 @@ hardbtn.addEventListener("click", function(){
 })
 
 reset.addEventListener("click", function(){
+     roundCount++;
+    counterElem.textContent = roundCount;
+  
     console.log("clicked")
     // generate all new colors
     color = generateRandomColors(numofSquares);
